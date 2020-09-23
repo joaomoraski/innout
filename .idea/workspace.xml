@@ -25,6 +25,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,7 +37,7 @@
       <updated>1600438021308</updated>
       <workItem from="1600438022404" duration="1783000" />
       <workItem from="1600779846670" duration="53000" />
-      <workItem from="1600879904831" duration="1218000" />
+      <workItem from="1600879904831" duration="6426000" />
     </task>
     <servers />
   </component>
@@ -48,9 +49,17 @@
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
     <state x="1829" y="123" key="FileChooserDialogImpl/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1600779896373" />
-    <state x="1883" y="288" key="NewPhpFileDialog" timestamp="1600880291699">
+    <state x="1883" y="288" key="NewPhpFileDialog" timestamp="1600883454928">
       <screen x="1366" y="0" width="1366" height="738" />
     </state>
-    <state x="1883" y="288" key="NewPhpFileDialog/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1600880291699" />
+    <state x="1883" y="288" key="NewPhpFileDialog/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1600883454928" />
+    <state x="1705" y="165" key="run.anything.popup" timestamp="1600890040135">
+      <screen x="1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="1705" y="165" key="run.anything.popup/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1600890040135" />
+    <state x="1712" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1600888153933">
+      <screen x="1366" y="0" width="1366" height="738" />
+    </state>
+    <state x="1712" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1366.738@1366.0.1366.738" timestamp="1600888153933" />
   </component>
 </project>
