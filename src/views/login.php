@@ -22,18 +22,26 @@
                     <i class="icofont-runner-alt-1 ml-1"></i>
                 </div>
                 <div class="card-body">
+                    <?php include(TEMPLATE_PATH . '/messages.php'); ?>
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input type="email" name="email"
-                               class="form-control"
+                               class="form-control <?= $errors['email'] ? 'is-invalid' : ''; ?>"
                                placeholder="Informe o e-mail para login."
                                autofocus
                                id="email"
                                value="<?= $_POST['email'] ?>"/>
+                        <div class="invalid-feedback">
+                            <?= $errors['email']; ?>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="password">Senha</label>
-                        <input type="password" name="password" id="password" placeholder="Informe a senha." class="form-control">
+                        <input type="password" name="password" id="password" placeholder="Informe a senha."
+                               class="form-control <?= $errors['password'] ? 'is-invalid' : ''; ?>">
+                        <div class="invalid-feedback">
+                            <?= $errors['password']; ?>
+                        </div>
                     </div>
                 </div>
                 <div class="card-footer">
