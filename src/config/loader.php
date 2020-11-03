@@ -1,4 +1,5 @@
 <?php
+//carregar a view e model
 function loadModel($modelName){
     require_once(MODEL_PATH . "/{$modelName}.php");
 }
@@ -26,5 +27,8 @@ function loadTemplateView($viewName, $params = array()){ //Para carregar a view 
     require_once(TEMPLATE_PATH . "/menu.php");
     require_once(VIEW_PATH . "/{$viewName}.php");
     require_once(TEMPLATE_PATH . "/footer.php");
+}
 
+function renderTitle($title, $subtitle, $icon = null){ //Tem acesso as variaveis
+    require_once(TEMPLATE_PATH . "/title.php");
 }
