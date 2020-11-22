@@ -55,6 +55,19 @@ class Model{
             return $result;
     }
 
+    public function save() {
+        $sql = "INSERT INTO " . static::$tableName . " ("
+            . implode(",", static::$columns) . ") VALUES (";
+        foreach(static::$columns as $col) {
+            $sql .= static::getFormatedValue($this->$col) . ",";
+        }
+        echo $sql;
+        $sql[strlen($sql) - 1] = ')';
+        $id = Database::executeSQL($sql);
+        $this->id = $id;
+    }
+    //implode transforam array em string
+
     private static function getFilters($filters){
         $sql = '';
         if (count($filters) > 0){
@@ -66,10 +79,10 @@ class Model{
         return $sql;
     }
 
-    private static function getFormatedValue($value){
-        if (is_null($value)){
-            echo "null";
-        } elseif (gettype($value) === 'string'){
+    private static function getFormatedValue($value) {
+        if(is_null($value)) {
+            return "null";
+        } else if(gettype($value) === 'string') {
             return "'${value}'";
         } else {
             return $value;
